@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="inspiring-app">
+<head>
+  <meta charset="utf-8">
+  <title>Inspiring App</title>
+  <base href="/" />
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+
+  <!-- inject:js -->
+  <!-- endinject -->
+  <!-- inject:css -->
+  <!-- endinject -->
+
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a ui-sref="categoriesIndex">Categories</a></li>
+      <li><a ui-sref="categoriesNew">Add new category</a></li>
+      <li><a ui-sref="quotesIndex">Quotes</a></li>
+      <li><a ui-sref="quotesNew">Add new quote</a></li>
+    </ul>
+  </nav>
+
+  <main ui-view></main>
+
+  <!-- <script>
+  $.get("http://localhost:3000/api/quotes")
+  .done(function(res){
+  console.log(res.data);
+});
+</script> -->
+</body>
+</html>
