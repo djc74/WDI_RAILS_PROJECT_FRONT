@@ -1,11 +1,23 @@
 <h1>Categories!</h1>
 
-{{ vm.categories }}
-
-{{ vm.quotes }}
-
-<ul>
-  <li ng-repeat="category in vm.categories track by $index">
-    <h3><a ui-sref="categoriesShow({ id: category.id })">{{category.name}}</a></h3>
-  </li>
-</ul>
+<div class="row">
+  <ul>
+    <li ng-repeat="category in vm.categories track by $index">
+      <div class="col s12 m6">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img src="images/sample-1.jpg">
+            <span class="card-title">{{category.name}}</span>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a ui-sref="categoriesShow({ id: category.id })">Show me all the {{category.name}} quotes</a>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>

@@ -5,8 +5,6 @@
   <title>Inspiring App</title>
   <base href="/" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.1/js/materialize.min.js"></script>
-
-
   <!-- inject:js -->
   <!-- endinject -->
   <!-- inject:css -->
@@ -18,7 +16,7 @@
   <nav>
     <div class="nav-wrapper deep-orange accent-3">
       <a href="home" class="brand-logo">Inspagram</a>
-      <ul id="nav-mobile" class="right">
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a ui-sref="categoriesIndex">Categories</a></li>
         <li><a ui-sref="categoriesNew">Add new category</a></li>
         <li><a ui-sref="quotesIndex">Quotes</a></li>
@@ -29,7 +27,5 @@
 <div class="container">
   <main ui-view></main>
 </div>
-
-
 </body>
 </html>

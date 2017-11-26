@@ -1,11 +1,8 @@
 <h1>Quotes SHOW</h1>
 
-{{vm.quote}}
-
 <h3>Category: {{vm.quote.category.name}}</h3>
 
 <img src="{{vm.quote.body}}">
 
-
-<a ui-sref="quotesEdit({ id: vm.quote.id })">Edit</a>
-<a href="#" ng-click="vm.delete(vm.quote)">Delete</a>
+<a class="waves-effect waves-light red btn" ui-sref="quotesEdit({ id: vm.quote.id })">Edit</a>
+<a class="waves-effect waves-light red btn" href="#" ng-click="vm.delete(vm.quote)">Delete</a>

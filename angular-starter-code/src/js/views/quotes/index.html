@@ -1,9 +1,7 @@
-<h1>Quotes</h1>
-
-{{ vm.quotes }}
-
 <ul>
-  <li ng-repeat="quote in vm.quotes track by $index">
-    <h3><a ui-sref="quotesShow({ id: quote.id })">{{quote.body}}</a></h3>
-  </li>
+  <div class="section">
+    <li class="center-align" ng-repeat="quote in vm.quotes track by $index">
+      <img class="responsive-img" ui-sref="quotesShow({ id: quote.id })" src="{{quote.body}}">
+    </li>
+  </div>
 </ul>
